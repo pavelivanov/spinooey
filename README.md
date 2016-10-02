@@ -1,2 +1,2 @@
-# spinooey
-A collection of css loaders and spinners with gooey effect
+# spinaround
+A collection of single element css loaders and spinners

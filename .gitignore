@@ -1,0 +1,9 @@
+.idea
+*.log
+*.log.*
+
+node_modules
+example/build/*.html
+example/build/*.css
+
+lib
