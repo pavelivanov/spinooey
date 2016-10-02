@@ -22,13 +22,15 @@
   ],
   "main": "./lib",
   "scripts": {
+    "start": "mkdirp ./lib && npm run build",
     "prepublish": "npm run build",
     "clean": "rimraf ./lib",
-    "dev": "stylus -w ./src -o ./lib",
-    "build": "stylus ./src -o ./lib"
+    "dev": "stylus -w ./src/spinooey.styl -o ./lib -u ./node_modules/nib/lib/nib",
+    "build": "stylus ./src/spinooey.styl -o ./lib -u ./node_modules/nib/lib/nib"
   },
   "dependencies": {},
   "devDependencies": {
+    "mkdirp": "^0.5.1",
     "nib": "^1.1.2",
     "rimraf": "^2.5.4",
     "stylus": "^0.54.5"
